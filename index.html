@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Cleone ID</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    /* Custom CSS for logo */
+    .brand-logo img {
+      max-height: 64px;
+      /* Adjust this value as needed */
+      width: auto;
+      height: auto;
+    }
+
+    .slider.fullscreen ul.indicators {
+      bottom: 80px;
+    }
+
+    .page-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 900;
+      padding: 0px;
+      text-align: center;
+    }
+
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: #000;
+    }
+
+    .preloader .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font: 14px arial;
+    }
+  </style>
+</head>
+
+<body class="grey darken-3">
+  <div class="preloader">
+    <div class="loading center">
+      <img src="assets/image/logo.gif" width="50%">
+    </div>
+  </div>
+
+  <nav class="grey darken-3 z-depth-5" role="navigation" style="z-index: 999; position: absolute;">
+    <div class="nav-wrapper container">
+      <!--      <a id="logo-container" href="#" class="brand-logo">Logo</a>-->
+      <a href="#!" class="brand-logo"><img src="assets/image/logo.webp" alt="Logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://blog.cleone.id">Blog</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="https://blog.cleone.id">Blog</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="fixed-action-btn click-to-toggle">
+    <a id="menu" class="btn-floating btn-large pulse amber lighten-2">
+      <i class="large material-icons black-text">menu</i>
+    </a>
+    <ul>
+      <li><a href="https://discord.gg/cleone" target="_blank" class="btn-floating indigo lighten-1 tooltipped"
+          data-position="left" data-tooltip="Discord"><i class="fab fa-discord"></i></a></li>
+      <li><a href="https://facebook.com/cleone.indonesia" target="_blank" class="btn-floating blue darken-1 tooltipped"
+          data-position="left" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/cleone.indonesia/" target="_blank" class="btn-floating purple tooltipped"
+          data-position="left" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.youtube.com/@cleone.indonesia" target="_blank" class="btn-floating red tooltipped"
+          data-position="left" data-tooltip="Youtube"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="https://x.com/CleoneIndonesia" target="_blank" class="btn-floating black darken-2 tooltipped"
+          data-position="left" data-tooltip="X"><i class="fab fa-x-twitter"></i></a></li>
+      <li><a href="https://steamcommunity.com/groups/cleone" target="_blank" class="btn-floating black tooltipped"
+          data-position="left" data-tooltip="Steam"><i class="fab fa-steam"></i></a></li>
+      <li><a href="https://steamcommunity.com/chat/invite/A0PjYykZ" target="_blank"
+          class="btn-floating black tooltipped" data-position="left" data-tooltip="Steam Chat"><i
+            class="fab fa-square-steam"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="tap-target amber lighten-2" data-target="menu">
+    <div class="tap-target-content">
+      <h5>Welcome</h5>
+      <p>Selamat datang di website official Cleone.ID, komunitas daring Indonesia berbasis Discord.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="section no-pad-bot">
+      <div class="container blog-posts">
+        <div class="slider fullscreen">
+          <ul class="slides">
+            <li>
+              <img src="assets/image/banner.webp">
+              <div class="caption center-align"
+                style="top: 70%; opacity: 0; transform: translateY(-100px) translateX(0px);">
+                <a href="https://discord.gg/cleone" target="_blank"
+                  class="btn waves-effect waves-light amber lighten-2 black-text">Join Our Community
+                  <i class="material-icons right">send</i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer z-depth-6 grey darken-3">
+    <div class="container">
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="center-align">© 2020 Made with Materialize & Cleone ID Team</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').floatingActionButton({
+        hoverEnabled: false
+      });
+      $('.tap-target').tapTarget({
+        isOpen: true
+      }).tapTarget('open');
+      $('.slider').slider();
+      $(".preloader").fadeOut(3000);
+      $('.tooltipped').tooltip();
+    });
+  </script>
+</body>
+
+</html>
