@@ -107,6 +107,11 @@
       transform: translate(-50%,-50%);
       font: 14px arial;
     }
+
+    .card {
+      background-color: #2D2D2D;
+      color: #EAEAEA;
+    }
   </style>
 </head>
 <body class="grey darken-3">
@@ -120,31 +125,31 @@
   <div class="nav-wrapper container">
     <!--      <a id="logo-container" href="#" class="brand-logo">Logo</a>-->
     <a href="#!" class="brand-logo"><img src="assets/image/logo.webp" alt="Logo"></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="https://blog.cleone.id">Blog</a></li>
-    </ul>
+<!--    <ul class="right hide-on-med-and-down">-->
+<!--      <li><a href="https://blog.cleone.id">Blog</a></li>-->
+<!--    </ul>-->
 
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="https://blog.cleone.id">Blog</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<!--    <ul id="nav-mobile" class="sidenav">-->
+<!--      <li><a href="https://blog.cleone.id">Blog</a></li>-->
+<!--    </ul>-->
+<!--    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
   </div>
 </nav>
 
-<div class="fixed-action-btn click-to-toggle">
-  <a id="menu" class="btn-floating btn-large pulse amber lighten-2" href="#" aria-label="Navigation">
-    <i class="large material-icons black-text">menu</i>
-  </a>
-  <ul>
-    <li><a href="https://discord.gg/cleone" target="_blank" class="btn-floating indigo lighten-1 tooltipped" data-position="left" data-tooltip="Discord"><i class="fab fa-discord"></i></a></li>
-    <li><a href="https://facebook.com/cleone.indonesia" target="_blank" class="btn-floating blue darken-1 tooltipped" data-position="left" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="https://www.instagram.com/cleone.indonesia/" target="_blank" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.youtube.com/@cleone.indonesia" target="_blank" class="btn-floating red tooltipped" data-position="left" data-tooltip="Youtube"><i class="fab fa-youtube"></i></a></li>
-    <li><a href="https://x.com/CleoneIndonesia" target="_blank" class="btn-floating black darken-2 tooltipped" data-position="left" data-tooltip="X"><i class="fab fa-x-twitter"></i></a></li>
-    <li><a href="https://steamcommunity.com/groups/cleone" target="_blank" class="btn-floating black tooltipped" data-position="left" data-tooltip="Steam"><i class="fab fa-steam"></i></a></li>
-    <li><a href="https://steamcommunity.com/chat/invite/A0PjYykZ" target="_blank" class="btn-floating black tooltipped" data-position="left" data-tooltip="Steam Chat"><i class="fab fa-square-steam"></i></a></li>
-  </ul>
-</div>
+<!--<div class="fixed-action-btn click-to-toggle">-->
+<!--  <a id="menu" class="btn-floating btn-large pulse amber lighten-2" href="#" aria-label="Navigation">-->
+<!--    <i class="large material-icons black-text">menu</i>-->
+<!--  </a>-->
+<!--  <ul>-->
+<!--    <li><a href="https://discord.gg/cleone" target="_blank" class="btn-floating indigo lighten-1 tooltipped" data-position="left" data-tooltip="Discord"><i class="fab fa-discord"></i></a></li>-->
+<!--    <li><a href="https://facebook.com/cleone.indonesia" target="_blank" class="btn-floating blue darken-1 tooltipped" data-position="left" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>-->
+<!--    <li><a href="https://www.instagram.com/cleone.indonesia/" target="_blank" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>-->
+<!--    <li><a href="https://www.youtube.com/@cleone.indonesia" target="_blank" class="btn-floating red tooltipped" data-position="left" data-tooltip="Youtube"><i class="fab fa-youtube"></i></a></li>-->
+<!--    <li><a href="https://x.com/CleoneIndonesia" target="_blank" class="btn-floating black darken-2 tooltipped" data-position="left" data-tooltip="X"><i class="fab fa-x-twitter"></i></a></li>-->
+<!--    <li><a href="https://steamcommunity.com/groups/cleone" target="_blank" class="btn-floating black tooltipped" data-position="left" data-tooltip="Steam"><i class="fab fa-steam"></i></a></li>-->
+<!--    <li><a href="https://steamcommunity.com/chat/invite/A0PjYykZ" target="_blank" class="btn-floating black tooltipped" data-position="left" data-tooltip="Steam Chat"><i class="fab fa-square-steam"></i></a></li>-->
+<!--  </ul>-->
+<!--</div>-->
 
 <div class="tap-target amber lighten-2" data-target="menu">
   <div class="tap-target-content">
@@ -154,22 +159,74 @@
 </div>
 
 <main>
-  <div class="section no-pad-bot" >
+  <div class="section no-pad-bot" style="padding-top: 100px;" >
     <div class="container blog-posts">
-      <div class="slider fullscreen">
-        <ul class="slides">
-          <li>
-            <img src="assets/image/banner.webp" alt="Banner">
-            <div class="caption center-align"
-                 style="top: 70%; opacity: 0; transform: translateY(-100px) translateX(0px);">
-              <a href="https://discord.gg/cleone" target="_blank"
-                 class="btn waves-effect waves-light amber lighten-2 black-text">Join Our Community
-                <i class="material-icons right">send</i>
-              </a>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/image/banner.webp">
+<!--              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i>-->
+<!--              </a>-->
             </div>
-          </li>
-        </ul>
+            <div class="card-content">
+              <span class="card-title center">Selamat Datang di Cleone.ID</span>
+              <p>Cleone.ID adalah komunitas daring Indonesia berbasis Discord. Tempat untuk berteman, berkumpul, dan berdiskusi tentang berbagai topik, terutama yang terkait dengan hobi dan gaming.</p>
+            </div>
+            <div class="card-action center">
+              <a href="https://discord.gg/cleone" target="_blank" class="waves-effect waves-light btn amber accent-3" style="color:#000000"><i class="material-icons left">exit_to_app</i>Gabung ke Discord!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title center">Blog Cleone.ID</span>
+              <p>Di sini, kita berbagi wawasan, ide, pengalaman, belajar hal baru, mencari solusi, atau mengeksplorasi topik yang menarik.</p>
+            </div>
+            <div class="card-action center">
+              <a href="https://blog.cleone.id" target="_blank" class="waves-effect waves-light btn amber accent-3" style="color:#000000"><i class="material-icons left">receipt</i>Kunjungi Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title center">External Link</span>
+            </div>
+            <div class="card-action center">
+              <a href="https://discord.gg/cleone" target="_blank" class="btn-floating indigo lighten-1 tooltipped" data-position="bottom" data-tooltip="Discord"><i class="fab fa-discord"></i></a>
+              <a href="https://facebook.com/cleone.indonesia" target="_blank" class="btn-floating blue darken-1 tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/cleone.indonesia/" target="_blank" class="btn-floating purple tooltipped" data-position="bottom" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@cleone.indonesia" target="_blank" class="btn-floating red tooltipped" data-position="bottom" data-tooltip="Youtube"><i class="fab fa-youtube"></i></a>
+              <a href="https://x.com/CleoneIndonesia" target="_blank" class="btn-floating black darken-2 tooltipped" data-position="bottom" data-tooltip="X"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://steamcommunity.com/groups/cleone" target="_blank" class="btn-floating black tooltipped" data-position="bottom" data-tooltip="Steam"><i class="fab fa-steam"></i></a>
+              <a href="https://steamcommunity.com/chat/invite/A0PjYykZ" target="_blank" class="btn-floating black tooltipped" data-position="bottom" data-tooltip="Steam Chat"><i class="fab fa-square-steam"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <iframe src="https://discord.com/widget?id=855771197438427146&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
+<!--      <div class="slider fullscreen">-->
+<!--        <ul class="slides">-->
+<!--          <li>-->
+<!--            <img src="assets/image/banner.webp" alt="Banner">-->
+<!--            <div class="caption center-align"-->
+<!--                 style="top: 70%; opacity: 0; transform: translateY(-100px) translateX(0px);">-->
+<!--              <a href="https://discord.gg/cleone" target="_blank"-->
+<!--                 class="btn waves-effect waves-light amber lighten-2 black-text">Join Our Community-->
+<!--                <i class="material-icons right">send</i>-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
     </div>
   </div>
 </main>
@@ -190,6 +247,9 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG5Y6K584M"></script>
 <script>
@@ -201,15 +261,32 @@
 </script>
 <script>
   $(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton({
-      hoverEnabled: false
-    });
-    $('.tap-target').tapTarget({
-      isOpen: true
-    }).tapTarget('open');
+    // $('.fixed-action-btn').floatingActionButton({
+    //   hoverEnabled: false
+    // });
+    // $('.tap-target').tapTarget({
+    //   isOpen: true
+    // }).tapTarget('open');
     $('.slider').slider();
     $(".preloader").fadeOut(3000);
     $('.tooltipped').tooltip();
+
+    $('.row').masonry({
+      itemSelector: '.col', // Target each grid item
+      columnWidth: '.col',  // Set the column width based on item size
+      percentPosition: true // Enable percentage-based positioning
+    });
+
+    $('.card').hover(
+      function () {
+        // Mouse enter animation
+        gsap.to(this, { scale: 1.1, duration: 0.3, ease: "power1.out" });
+      },
+      function () {
+        // Mouse leave animation
+        gsap.to(this, { scale: 1, duration: 0.3, ease: "power1.out" });
+      }
+    );
   });
 </script>
 </body>
